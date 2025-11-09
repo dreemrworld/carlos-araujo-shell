@@ -8,6 +8,7 @@ A modern, production-ready template for building scalable web applications with 
 
 - ⚡ **Next.js 15** - App Router, Server Components, and Turbopack
 - 🎨 **ShadCN UI** - Beautiful, accessible components with Tailwind CSS
+- 🎭 **Magic UI Design MCP** - Advanced UI components and animations
 - 🌐 **Cloudflare Workers** - Global edge deployment with instant cold boots
 - 🔥 **TypeScript** - Full type safety throughout your application
 - 🎯 **ESLint + Prettier** - Consistent code quality
@@ -164,6 +165,45 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ShadCN UI](https://ui.shadcn.com/) - Beautiful UI Components
 - [Cloudflare Workers](https://workers.cloudflare.com/) - Global Edge Computing
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS Framework
+
+---
+
+## 🌐 Leia-me em Português (PT-PT)
+
+### Template de Início Rápido Next.js + ShadCN + Cloudflare Workers 🚀
+
+Um template moderno e pronto para produção para criar aplicações web escaláveis com **Next.js 15**, **ShadCN UI** e **Cloudflare Workers**. Implemente globalmente em segundos com pré-visualizações instantâneas e computação de borda.
+
+#### 🚀 Início Rápido
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/dreemrworld/nextjs-shadcn-cf-workers.git
+   cd nextjs-shadcn-cf-workers
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   pnpm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento**
+   ```bash
+   pnpm dev
+   ```
+
+4. **Abra seu navegador**
+
+   Navegue para [http://localhost:3000](http://localhost:3000) para ver a sua aplicação!
+
+#### 🎯 Funcionalidades
+
+- ⚡ **Next.js 15** - App Router, Server Components e Turbopack
+- 🎨 **ShadCN UI** - Componentes bonitos e acessíveis com Tailwind CSS
+- 🎭 **Magic UI Design MCP** - Componentes de UI avançados e animações
+- 🌐 **Cloudflare Workers** - Implementação global de borda com arranques frios instantâneos
+
+Este template inclui uma configuração completa para começar a desenvolver aplicações modernas com as melhores ferramentas disponíveis.
 
 ---
 
