@@ -1,36 +1,177 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + ShadCN + Cloudflare Workers Quick Start Template 🚀
 
-## Getting Started
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/dreemrworld/nextjs-shadcn-cf-workers)
 
-First, run the development server:
+A modern, production-ready template for building scalable web applications with **Next.js 15**, **ShadCN UI**, and **Cloudflare Workers**. Deploy globally in seconds with instant previews and edge computing.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- ⚡ **Next.js 15** - App Router, Server Components, and Turbopack
+- 🎨 **ShadCN UI** - Beautiful, accessible components with Tailwind CSS
+- 🌐 **Cloudflare Workers** - Global edge deployment with instant cold boots
+- 🔥 **TypeScript** - Full type safety throughout your application
+- 🎯 **ESLint + Prettier** - Consistent code quality
+- 📱 **Responsive Design** - Mobile-first approach
+- 🚀 **One-Click Deploy** - Deploy directly to Cloudflare Workers/Pages
+
+## 🚀 Quick Start
+
+### Deploy Instantly
+
+Click the "Deploy to Cloudflare Workers" button above and get your app live in under 2 minutes!
+
+### Local Development
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/dreemrworld/nextjs-shadcn-cf-workers.git
+   cd nextjs-shadcn-cf-workers
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server**
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+
+   Navigate to [http://localhost:3000](http://localhost:3000) to see your app!
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [ShadCN UI](https://ui.shadcn.com/)
+- **Deployment:** [Cloudflare Workers](https://workers.cloudflare.com/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Package Manager:** [pnpm](https://pnpm.io/) (recommended)
+
+## 📁 Project Structure
+
+```
+nextjs-shadcn-cf-workers/
+├── public/              # Static assets
+├── src/
+│   ├── app/            # Next.js App Router
+│   │   ├── layout.tsx   # Root layout
+│   │   ├── page.tsx     # Home page
+│   │   └── globals.css  # Global styles
+│   └── lib/
+│       └── utils.ts     # Utility functions
+├── components.json      # ShadCN configuration
+├── next.config.ts       # Next.js configuration
+├── tailwind.config.ts   # Tailwind CSS config
+├── wrangler.jsonc       # Cloudflare Workers config
+└── package.json         # Project dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Cloudflare Workers/Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This template is optimized for **Cloudflare Workers** deployment with zero cold starts and global edge computing.
 
-## Learn More
+#### Option 1: One-Click Deploy
+Click the "Deploy to Cloudflare Workers" button at the top of this README.
 
-To learn more about Next.js, take a look at the following resources:
+#### Option 2: Manual Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Install Wrangler CLI**
+   ```bash
+   npm install -g wrangler
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Login to Cloudflare**
+   ```bash
+   wrangler auth login
+   ```
 
-## Deploy on Vercel
+3. **Deploy**
+   ```bash
+   npm run deploy
+   # or
+   wrangler deploy
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Other Platforms
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This template can also be deployed to:
+- [Vercel](https://vercel.com/)
+- [Netlify](https://netlify.com/)
+- [Railway](https://railway.app/)
+
+## 🎨 Customization
+
+### Adding ShadCN Components
+
+```bash
+pnpm dlx shadcn-ui@latest add button
+```
+
+### Modifying Theme
+
+Edit `src/app/globals.css` to customize your theme colors and styles.
+
+### Adding New Pages
+
+Create new pages in the `src/app/` directory following Next.js App Router conventions.
+
+## 📝 Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+- `pnpm deploy` - Deploy to Cloudflare Workers
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Carlos Araújo**
+- Portfolio: [carlos.goat.africa](https://carlos.goat.africa)
+- Email: [carlos@goat.africa](mailto:carlos@goat.africa)
+- Need help? Feel free to reach out!
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/) - The React Framework
+- [ShadCN UI](https://ui.shadcn.com/) - Beautiful UI Components
+- [Cloudflare Workers](https://workers.cloudflare.com/) - Global Edge Computing
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS Framework
+
+---
+
+<div align="center">
+  <p>Built with ❤️ by Carlos Araújo using Next.js, ShadCN, and Cloudflare Workers</p>
+  <p>
+    <a href="#nextjs--shadcn--cloudflare-workers-quick-start-template-">⭐ Star this repo</a> •
+    <a href="https://github.com/dreemrworld/nextjs-shadcn-cf-workers/issues">🐛 Report Issues</a> •
+    <a href="https://github.com/dreemrworld/nextjs-shadcn-cf-workers/discussions">💬 Discussions</a>
+  </p>
+</div>
