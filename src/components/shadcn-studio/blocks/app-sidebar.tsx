@@ -1,5 +1,15 @@
 import * as React from "react"
 import {
+  Bot,
+  BookOpen,
+  Briefcase,
+  DollarSign,
+  GraduationCap,
+  ShoppingBag,
+  Sparkles,
+  Zap,
+} from "lucide-react"
+import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
@@ -13,16 +23,18 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 
-// Website categories
+// Website categories with icons
 const websiteCategories = [
   {
     title: "Portfolio & Personal",
+    icon: Briefcase,
     items: [
       { title: "Carlos GOAT Portfolio", url: "https://carlos.goat.africa", embed: true },
     ]
   },
   {
     title: "AI Applications",
+    icon: Sparkles,
     items: [
       { title: "Chat Bull AI", url: "https://chat.bull.africa", embed: true },
       { title: "Chat GOAT AI Assistant", url: "https://chat.goat.africa", embed: false },
@@ -30,6 +42,7 @@ const websiteCategories = [
   },
   {
     title: "Productivity Tools",
+    icon: Zap,
     items: [
       { title: "Nota Bene Notes", url: "https://nb.bull.africa", embed: true },
       { title: "HTML Editor", url: "https://html.bull.africa", embed: true },
@@ -39,6 +52,7 @@ const websiteCategories = [
   },
   {
     title: "Business & Commerce",
+    icon: DollarSign,
     items: [
       { title: "Tech Store Template", url: "https://shopgoat.pages.dev", embed: true },
       { title: "Digital Catalog", url: "https://shop.goat.africa", embed: true },
@@ -46,6 +60,7 @@ const websiteCategories = [
   },
   {
     title: "Professional & Academic",
+    icon: GraduationCap,
     items: [
       { title: "HTML Editor GitHub", url: "https://github.com/dreemrworld/html-wysiwyg", embed: true },
       { title: "CINVESTEC Articles", url: "https://www.cinvestec.com/author/carlos-araujo/", embed: true },
@@ -76,7 +91,10 @@ export function AppSidebar({ onWebsiteSelect, ...props }: AppSidebarProps) {
       <SidebarContent>
         {websiteCategories.map((category) => (
           <SidebarGroup key={category.title}>
-            <SidebarGroupLabel>{category.title}</SidebarGroupLabel>
+            <SidebarGroupLabel className="flex items-center gap-2 text-sidebar-primary">
+              <category.icon className="h-4 w-4" />
+              {category.title}
+            </SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
                 {category.items.map((website) => (
